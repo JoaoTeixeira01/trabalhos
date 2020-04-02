@@ -1,10 +1,7 @@
+<<<<<<< HEAD
 Alexandre Silva
 <<<<<<< HEAD
 Jo�o Teixeira
 
 Tema: Stand de Autom�veis.
-=======
-Jo�o Teixeira
 
-Tema: Stand de Autom�veis.
->>>>>>> master
