@@ -1,4 +1,10 @@
 Alexandre Silva
+<<<<<<< HEAD
 Joï¿½o Teixeira
 
 Tema: Stand de Automï¿½veis.
+=======
+João Teixeira
+
+Tema: Stand de Automóveis
+>>>>>>> master
