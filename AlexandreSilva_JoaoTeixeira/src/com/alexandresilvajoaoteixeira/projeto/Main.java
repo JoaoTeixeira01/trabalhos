@@ -62,7 +62,6 @@ public class Main {
 		jogo.setJornada(1);
 		jogo.addArbitro(arbitro);
 		
-		
 		System.out.println(jogo);
 		
 		//add's e remove's
