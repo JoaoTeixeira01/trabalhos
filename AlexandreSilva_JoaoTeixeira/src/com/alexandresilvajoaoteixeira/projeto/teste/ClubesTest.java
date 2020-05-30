@@ -1,4 +1,4 @@
-package Testes;
+package com.alexandresilvajoaoteixeira.projeto.teste;
 
 import static org.junit.jupiter.api.Assertions.*;
 
