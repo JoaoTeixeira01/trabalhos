@@ -2,6 +2,27 @@ package com.alexandresilvajoaoteixeira.projeto;
 
 import java.util.Date;
 
+/**
+ * A class <strong>Treinadores</strong> disponibliza um conjunto de atributos
+ * referentes a cada Treinador.
+ * 
+ * A class é constituida por 5 atributos referentes a cada Treinador
+ * 
+ * <pre>
+ * {@code int cartaoCidadao
+ * String nome
+ * Date dataNascimento
+ * int contacto
+ * String email
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
+
 public class Treinadores extends Equipas{
 	// =======================================================
     // ===================== ATRIBUTOS =======================

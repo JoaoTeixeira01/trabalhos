@@ -2,6 +2,26 @@ package com.alexandresilvajoaoteixeira.projeto;
 
 import java.util.Date;
 
+/**
+ * A class <strong>Arbitros</strong> disponibliza um conjunto de atributos
+ * referentes a cada arbitro.
+ * 
+ * A class é constituida por 5 atributos referentes a cada arbitro
+ * 
+ * <pre>
+ * {@code int cartaoCidadao
+ * String nome 
+ * Date dataNascimento
+ * int contacto
+ * String email
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
 public class Arbitros extends Jogos{
 	// =======================================================
     // ===================== ATRIBUTOS =======================

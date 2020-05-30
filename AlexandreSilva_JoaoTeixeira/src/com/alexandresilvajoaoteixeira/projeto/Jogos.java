@@ -4,7 +4,29 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Jogos extends Competicoes{
+/**
+ * A class <strong>Jogos</strong> disponibliza um conjunto de atributos
+ * referentes a cada Jogo.
+ * 
+ * A class é constituida por 7 atributos referentes a cada Jogo
+ * 
+ * <pre>
+ * {@code String equipaVisitada
+ * String equipaVisitante
+ * int golosEquipaVisitada
+ * int golosEquipaVisitante
+ * Date dataJogo
+ * int jornada
+ * List<Arbitros> arbitros = new ArrayList<Arbitros>()
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
+class Jogos extends Competicoes{
 	// =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================

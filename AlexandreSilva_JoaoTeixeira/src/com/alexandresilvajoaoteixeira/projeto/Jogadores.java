@@ -2,6 +2,28 @@ package com.alexandresilvajoaoteixeira.projeto;
 
 import java.util.Date;
 
+/**
+ * A class <strong>Jogadores</strong> disponibliza um conjunto de atributos
+ * referentes a cada Jogador.
+ * 
+ * A class é constituida por 7 atributos referentes a cada Jogador
+ * 
+ * <pre>
+ * {@code int cartaoCidadao
+ * String nome
+ * Date dataNascimento
+ * int contacto
+ * String email
+ * String posicao
+ * boolean pePreferido
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
 public class Jogadores extends Equipas{
 	// =======================================================
     // ===================== ATRIBUTOS =======================

@@ -4,6 +4,29 @@ import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * A class <strong>Clubes</strong> disponibliza um conjunto de atributos
+ * referentes a cada clube.
+ * 
+ * A class é constituida por 8 atributos referentes a cada clube
+ * 
+ * <pre>
+ * {@code int codigoIdentificador
+ * String nome
+ * Date dataFundacao
+ * String corEquipamento
+ * int contacto
+ * String email
+ * String morada
+ * List<Equipas> equipasEscaloes
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
 public class Clubes extends Competicoes{
 	// =======================================================
     // ===================== ATRIBUTOS =======================

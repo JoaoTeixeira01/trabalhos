@@ -3,6 +3,26 @@ package com.alexandresilvajoaoteixeira.projeto;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * A class <strong>Equipas</strong> disponibliza um conjunto de atributos
+ * referentes a cada equipa.
+ * 
+ * A class é constituida por 5 atributos referentes a cada equipa
+ * 
+ * <pre>
+ * {@code int codigoIdentificador
+ * String nome
+ * String escalao
+ * List<Jogadores> jogadores = new ArrayList<Jogadores>()
+ * List<Treinadores> treinadores = new ArrayList<Treinadores>()
+ * }
+ * </pre>
+ * @author Alexandre Silva e João Teixeira
+ * @version 1.0
+ * @since 31/05/2020
+ *
+ */
+
 public class Equipas extends Clubes{
 	// =======================================================
     // ===================== ATRIBUTOS =======================
