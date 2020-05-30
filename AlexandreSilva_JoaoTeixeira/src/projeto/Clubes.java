@@ -4,12 +4,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
-public abstract class Clubes extends Competicoes{
+public class Clubes extends Competicoes{
 	// =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
 
-	private int codigoIdent;
+	private int codigoIdentificador;
 	private String nome;
 	private Date dataFundacao;
 	private String corEquipamento;
@@ -17,18 +17,17 @@ public abstract class Clubes extends Competicoes{
 	private String email;
 	private String morada;
 	private List<Equipas> equipasEscaloes;
-	private List<Equipas> equipa = new ArrayList<Equipas>();
-	
+
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
-	public int getCodigoIdent() {
-		return codigoIdent;
+	public int getcodigoIdentificador() {
+		return codigoIdentificador;
 	}
 	
-	public void setCodigoIdent(int codigoIdent) {
-		this.codigoIdent = codigoIdent;
+	public void setcodigoIdentificador(int codigoIdentificador) {
+		this.codigoIdentificador = codigoIdentificador;
 	}
 	
 	public String getNome() {
@@ -87,9 +86,6 @@ public abstract class Clubes extends Competicoes{
 		this.equipasEscaloes = equipasEscaloes;
 	}
 
-	public void addequipa(Equipas equipa) {
-		this.equipa.add(equipa);
-	}
     // =======================================================
     // =================== CONSTRUTORES =====================
     // =======================================================
@@ -102,10 +98,10 @@ public abstract class Clubes extends Competicoes{
 
     // CONSTRUTOR COM PARÂMETROS
 
-	public Clubes(int codigoIdent, String nome, Date dataFundacao, String corEquipamento, int contacto, String email,
+	public Clubes(int codigoIdentificador, String nome, Date dataFundacao, String corEquipamento, int contacto, String email,
 			String morada) {
 		super();
-		this.codigoIdent = codigoIdent;
+		this.codigoIdentificador = codigoIdentificador;
 		this.nome = nome;
 		this.dataFundacao = dataFundacao;
 		this.corEquipamento = corEquipamento;
@@ -122,6 +118,10 @@ public abstract class Clubes extends Competicoes{
 	public void addEquipa(Equipas equipasEscaloes) {
 		this.equipasEscaloes.add(equipasEscaloes);
 	}
+	
+	public void removeEquipa(Equipas equipasEscaloes) {
+		this.equipasEscaloes.remove(equipasEscaloes);
+	}
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
@@ -131,7 +131,7 @@ public abstract class Clubes extends Competicoes{
 
 	@Override
 	public String toString() {
-		return "Clubes [codigoIdent=" + codigoIdent + ", nome=" + nome + ", dataFundacao=" + dataFundacao
+		return "Clubes [codigoIdentificador=" + codigoIdentificador + ", nome=" + nome + ", dataFundacao=" + dataFundacao
 				+ ", corEquipamento=" + corEquipamento + ", contacto=" + contacto + ", email=" + email + ", morada="
 				+ morada + ", equipasEscaloes=" + equipasEscaloes + "]";
 	}

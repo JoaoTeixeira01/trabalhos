@@ -1,6 +1,8 @@
 package projeto;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Jogos extends Competicoes{
 	// =======================================================
@@ -13,7 +15,7 @@ public class Jogos extends Competicoes{
 	private int golosEquipaVisitante;
 	private Date dataJogo;
 	private int jornada;
-	private String arbitros;
+	private List<Arbitros> arbitros = new ArrayList<Arbitros>();
 
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
@@ -67,11 +69,11 @@ public class Jogos extends Competicoes{
 		this.jornada = jornada;
 	}
 	
-	public String getArbitros() {
+	public List<Arbitros> getArbitros() {
 		return arbitros;
 	}
-	
-	public void setArbitros(String arbitros) {
+
+	public void setArbitros(List<Arbitros> arbitros) {
 		this.arbitros = arbitros;
 	}
 
@@ -88,7 +90,7 @@ public class Jogos extends Competicoes{
     // CONSTRUTOR COM PARÂMETROS
 
 	public Jogos(String equipaVisitada, String equipaVisitante, int golosEquipaVisitada, int golosEquipaVisitante,
-			Date dataJogo, int jornada, String arbitros) {
+			Date dataJogo, int jornada) {
 		super();
 		this.equipaVisitada = equipaVisitada;
 		this.equipaVisitante = equipaVisitante;
@@ -96,14 +98,20 @@ public class Jogos extends Competicoes{
 		this.golosEquipaVisitante = golosEquipaVisitante;
 		this.dataJogo = dataJogo;
 		this.jornada = jornada;
-		this.arbitros = arbitros;
+		this.arbitros = new ArrayList<Arbitros>();
 	}
 
     // =======================================================
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
+	public void addArbitro(Arbitros arbitros) {
+		this.arbitros.add(arbitros);
+	}
 	
+	public void removeArbitro(Arbitros arbitros) {
+		this.arbitros.remove(arbitros);
+	}
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============

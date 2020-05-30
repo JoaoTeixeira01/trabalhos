@@ -11,18 +11,18 @@ public class Equipas extends Clubes{
 	private int codigoIdentificador;
 	private String nome;
 	private String escalao;
-	private List<Jogadores> jogadores;
-	private List<Treinadores> treinadores;
+	private List<Jogadores> jogadores = new ArrayList<Jogadores>();
+	private List<Treinadores> treinadores = new ArrayList<Treinadores>();
 
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
-	public int getCodigoIdentificador() {
+	public int getcodigoIdentificador() {
 		return codigoIdentificador;
 	}
 
-	public void setCodigoIdentificador(int codigoIdentificador) {
+	public void setCodigoIdent(int codigoIdentificador) {
 		this.codigoIdentificador = codigoIdentificador;
 	}
 	
