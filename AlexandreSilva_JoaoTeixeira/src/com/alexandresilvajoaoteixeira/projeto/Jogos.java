@@ -38,7 +38,7 @@ public class Jogos extends Competicoes{
 	private Date dataJogo;
 	private int jornada;
 	private List<Arbitros> arbitros = new ArrayList<Arbitros>();
-	
+
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
@@ -122,20 +122,20 @@ public class Jogos extends Competicoes{
 		this.jornada = jornada;
 		this.arbitros = new ArrayList<Arbitros>();
 	}
-	
-	// =======================================================
+
+    // =======================================================
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
 	public void addArbitro(Arbitros arbitros) {
-		this.arbitros.add(arbitros); 
+		this.arbitros.add(arbitros);
 	}
 	
 	public void removeArbitro(Arbitros arbitros) {
 		this.arbitros.remove(arbitros);
 	}
-	
-	// =======================================================
+
+    // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
     // =======================================================
 
@@ -147,6 +147,6 @@ public class Jogos extends Competicoes{
 				+ ", golosEquipaVisitada=" + golosEquipaVisitada + ", golosEquipaVisitante=" + golosEquipaVisitante
 				+ ", dataJogo=" + dataJogo + ", jornada=" + jornada + ", arbitros=" + arbitros + "]";
 	}
- 
-   // ----> equals()
+
+    // ----> equals()
 }
