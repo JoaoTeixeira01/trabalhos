@@ -128,7 +128,7 @@ public class Jogos extends Competicoes{
     // =======================================================
 
 	public void addArbitro(Arbitros arbitros) {
-		this.arbitros.add(arbitros);
+		this.arbitros.add(arbitros); 
 	}
 	
 	public void removeArbitro(Arbitros arbitros) {
