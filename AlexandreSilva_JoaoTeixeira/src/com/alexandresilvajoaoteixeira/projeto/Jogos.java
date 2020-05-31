@@ -26,7 +26,7 @@ import java.util.List;
  *
  */
 
-class Jogos extends Competicoes{
+public class Jogos extends Competicoes{
 	// =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
@@ -38,7 +38,7 @@ class Jogos extends Competicoes{
 	private Date dataJogo;
 	private int jornada;
 	private List<Arbitros> arbitros = new ArrayList<Arbitros>();
-
+	
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
@@ -122,8 +122,8 @@ class Jogos extends Competicoes{
 		this.jornada = jornada;
 		this.arbitros = new ArrayList<Arbitros>();
 	}
-
-    // =======================================================
+	
+	// =======================================================
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
@@ -134,8 +134,8 @@ class Jogos extends Competicoes{
 	public void removeArbitro(Arbitros arbitros) {
 		this.arbitros.remove(arbitros);
 	}
-
-    // =======================================================
+	
+	// =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
     // =======================================================
 
@@ -147,6 +147,6 @@ class Jogos extends Competicoes{
 				+ ", golosEquipaVisitada=" + golosEquipaVisitada + ", golosEquipaVisitante=" + golosEquipaVisitante
 				+ ", dataJogo=" + dataJogo + ", jornada=" + jornada + ", arbitros=" + arbitros + "]";
 	}
-
-    // ----> equals()
+ 
+   // ----> equals()
 }
