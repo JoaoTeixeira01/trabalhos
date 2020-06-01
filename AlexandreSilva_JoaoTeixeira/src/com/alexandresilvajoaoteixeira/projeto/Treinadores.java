@@ -1,5 +1,6 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
+
 import java.util.Date;
 
 /**
@@ -104,13 +105,14 @@ public class Treinadores extends Equipas{
     // =======================================================
 
 	public void Treinadorinfo() {
+		System.out.println("\nTreinadores");
 		System.out.println(this.cartaoCidadao);
 		System.out.println(this.nome);
 		System.out.println(this.dataNascimento);
 		System.out.println(this.contacto);
 		System.out.println(this.email);
+		System.out.println("\n");
 	}
-
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
     // =======================================================

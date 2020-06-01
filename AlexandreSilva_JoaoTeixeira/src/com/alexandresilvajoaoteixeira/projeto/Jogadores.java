@@ -1,5 +1,6 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
+
 import java.util.Date;
 
 /**
@@ -126,6 +127,7 @@ public class Jogadores extends Equipas{
     // =======================================================
 
 	public void Jogadorinfo() {
+		System.out.println("\nJogadores");
 		System.out.println(this.cartaoCidadao);
 		System.out.println(this.nome);
 		System.out.println(this.dataNascimento);
@@ -133,6 +135,7 @@ public class Jogadores extends Equipas{
 		System.out.println(this.email);
 		System.out.println(this.posicao);
 		System.out.println(this.pePreferido);
+		System.out.println("\n");
 	}
 	
 	@Override

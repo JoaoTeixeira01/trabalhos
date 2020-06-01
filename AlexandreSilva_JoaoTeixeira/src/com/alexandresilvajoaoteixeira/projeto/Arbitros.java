@@ -1,5 +1,6 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
+
 import java.time.LocalDate;
 
 /**
@@ -103,13 +104,14 @@ public class Arbitros extends Jogos{
     // =======================================================
 
 	public void Arbitroinfo() {
+		System.out.println("\nArbitros");
 		System.out.println(this.cartaoCidadao);
 		System.out.println(this.nome);
 		System.out.println(this.dataNascimento);
 		System.out.println(this.contacto);
 		System.out.println(this.email);
+		System.out.println("\n");
 	}
-
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
     // =======================================================
