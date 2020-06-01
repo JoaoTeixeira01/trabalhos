@@ -131,16 +131,68 @@ public class Competicoes {
 		this.equipasEscalao.add(equipasEscalao);	
 	}
 	
-	public void removeEquipa(Equipas equipasEscalao) {
-		this.equipasEscalao.remove(equipasEscalao);
-	}
+	public void removeEquipa(int codigo) {
+        int equipaRemover = Equipa(codigo);
+        if (equipaRemover == -1) {
+
+        } else
+
+        this.equipasEscalao.remove(equipaRemover);
+    }
+
+    public void editEquipa(int codigo, Equipas equipasEscalao) {
+        int equipaRemover = Equipa(codigo);
+        if (equipaRemover == -1) {
+
+        } else
+
+        this.equipasEscalao.set(equipaRemover, equipasEscalao);
+    }
+
+    public int Equipa(int codigo) {
+        for (int i = 0; i < equipasEscalao.size(); i++) {
+            if (equipasEscalao.get(i).getcodigoIdentificador() == codigo)
+                return i;
+        }
+        return -1;
+    }
 	
 	public void addJogo(Jogos jogos) {
 		this.jogos.add(jogos);
 	}
 	
-	public void removeJogo(Jogos jogos) {
-		this.jogos.remove(jogos);
+	public void removeJogo(int codigo) {
+        int jogoRemover = Jogo(codigo);
+        if (jogoRemover == -1) {
+
+        } else
+
+        this.jogos.remove(jogoRemover);
+    }
+
+    public void editJogo(int codigo, Jogos jogos) {
+        int jogoRemover = Jogo(codigo);
+        if (jogoRemover == -1) {
+
+        } else
+
+        this.jogos.set(jogoRemover, jogos);
+    }
+
+    public int Jogo(int codigo) {
+        for (int i = 0; i < jogos.size(); i++) {
+            if (jogos.get(i).getcodigoIdentificador() == codigo)
+                return i;
+        }
+        return -1;
+    }
+	
+	public void numeroEquipas(Equipas equipasEscalao) {
+		this.equipasEscalao.size();
+	}
+	
+	public void jogosJornada() {
+		
 	}
 	
     // =======================================================

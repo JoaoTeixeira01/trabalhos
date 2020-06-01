@@ -103,7 +103,13 @@ public class Treinadores extends Equipas{
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
-	
+	public void Treinadorinfo() {
+		System.out.println(this.cartaoCidadao);
+		System.out.println(this.nome);
+		System.out.println(this.dataNascimento);
+		System.out.println(this.contacto);
+		System.out.println(this.email);
+	}
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============
@@ -118,4 +124,5 @@ public class Treinadores extends Equipas{
 	}
 
     // ----> equals()
+	
 }

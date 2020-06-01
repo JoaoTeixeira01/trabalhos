@@ -102,7 +102,13 @@ public class Arbitros extends Jogos{
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
-	
+	public void Arbitroinfo() {
+		System.out.println(this.cartaoCidadao);
+		System.out.println(this.nome);
+		System.out.println(this.dataNascimento);
+		System.out.println(this.contacto);
+		System.out.println(this.email);
+	}
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============

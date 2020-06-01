@@ -138,12 +138,44 @@ public class Clubes extends Competicoes{
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
+	//add e remove nas equipas
 	public void addEquipa(Equipas equipasEscaloes) {
 		this.equipasEscaloes.add(equipasEscaloes);
 	}
 	
-	public void removeEquipa(Equipas equipasEscaloes) {
-		this.equipasEscaloes.remove(equipasEscaloes);
+	public void removeEquipa(int codigo) {
+        int equipaRemover = Equipa(codigo);
+        if (equipaRemover == -1) {
+
+        } else
+
+        this.equipasEscaloes.remove(equipaRemover);
+    }
+
+    public void editEquipa(int codigo, Equipas equipasEscaloes) {
+        int equipaRemover = Equipa(codigo);
+        if (equipaRemover == -1) {
+
+        } else
+
+        this.equipasEscaloes.set(equipaRemover, equipasEscaloes);
+    }
+
+    public int Equipa(int codigo) {
+        for (int i = 0; i < equipasEscaloes.size(); i++) {
+            if (equipasEscaloes.get(i).getcodigoIdentificador() == codigo)
+                return i;
+        }
+        return -1;
+    }
+    
+	//numero de jogadores e treinadores no clube
+	public void numeroJogadores(Jogadores jogadores) {
+		
+	}
+	
+	public void numeroTreinadores(Treinadores Treinadores) {
+		
 	}
 
     // =======================================================

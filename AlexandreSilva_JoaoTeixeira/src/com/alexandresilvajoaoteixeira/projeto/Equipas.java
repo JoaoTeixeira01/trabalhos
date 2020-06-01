@@ -107,15 +107,73 @@ public class Equipas extends Clubes{
 		this.jogadores.add(jogadores);
 	}
 	
-	public void removeJOgadores(Jogadores jogadores) {
-		
-	}
+	public void removeJogadores(int codigo) {
+        int jogadorRemover = Jogadores(codigo);
+        if (jogadorRemover == -1) {
+
+        } else
+
+        this.jogadores.remove(jogadorRemover);
+    }
+
+    public void editJogadores(int codigo, Jogadores jogador) {
+        int jogadorRemover = Jogadores(codigo);
+        if (jogadorRemover == -1) {
+
+        } else
+
+        this.jogadores.set(jogadorRemover, jogador);
+    }
+
+    public int Jogadores(int codigo) {
+        for (int i = 0; i < jogadores.size(); i++) {
+            if (jogadores.get(i).getCartaoCidadao() == codigo)
+                return i;
+        }
+        return -1;
+    }
 	
 	public void addTreinadores(Treinadores treinadores) {
 		this.treinadores.add(treinadores);
 	}
 	
-	public void removeTreinadores(Treinadores treinadores) {
+	public void removeTreinadores(int codigo) {
+        int treinadorRemover = Treinadores(codigo);
+        if (treinadorRemover == -1) {
+
+        } else
+
+        this.treinadores.remove(treinadorRemover);
+    }
+
+    public void editTreinadores(int codigo, Treinadores treinadores) {
+        int treinadorRemover = Treinadores(codigo);
+        if (treinadorRemover == -1) {
+
+        } else
+
+        this.treinadores.set(treinadorRemover, treinadores);
+    }
+
+    public int Treinadores(int codigo) {
+        for (int i = 0; i < treinadores.size(); i++) {
+            if (treinadores.get(i).getCartaoCidadao() == codigo)
+                return i;
+        }
+        return -1;
+    }
+	
+	@Override
+	public void numeroJogadores(Jogadores jogadores) {
+		this.jogadores.size();
+	}
+	
+	@Override
+	public void numeroTreinadores(Treinadores treinadores) {
+		this.treinadores.size();
+	}
+	
+	public void ordenarJogadores(Jogadores jogadores) {
 		
 	}
 	

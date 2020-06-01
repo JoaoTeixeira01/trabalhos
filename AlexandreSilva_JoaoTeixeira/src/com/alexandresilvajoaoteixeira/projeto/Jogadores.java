@@ -125,7 +125,20 @@ public class Jogadores extends Equipas{
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
+	public void Jogadorinfo() {
+		System.out.println(this.cartaoCidadao);
+		System.out.println(this.nome);
+		System.out.println(this.dataNascimento);
+		System.out.println(this.contacto);
+		System.out.println(this.email);
+		System.out.println(this.posicao);
+		System.out.println(this.pePreferido);
+	}
 	
+	@Override
+	public void ordenarJogadores(Jogadores jogadores) {
+		
+	}	
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============

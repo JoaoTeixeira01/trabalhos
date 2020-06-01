@@ -131,9 +131,31 @@ public class Jogos extends Competicoes{
 		this.arbitros.add(arbitros);
 	}
 	
-	public void removeArbitro(Arbitros arbitros) {
-		this.arbitros.remove(arbitros);
-	}
+	public void removeArbitro(int codigo) {
+        int arbitroRemover = Arbitro(codigo);
+        if (arbitroRemover == -1) {
+
+        } else
+
+        this.arbitros.remove(arbitroRemover);
+    }
+
+    public void editJogo(int codigo, Arbitros arbitros) {
+        int arbitroRemover = Arbitro(codigo);
+        if (arbitroRemover == -1) {
+
+        } else
+
+        this.arbitros.set(arbitroRemover, arbitros);
+    }
+
+    public int Arbitro(int codigo) {
+        for (int i = 0; i < arbitros.size(); i++) {
+            if (arbitros.get(i).getCartaoCidadao() == codigo)
+                return i;
+        }
+        return -1;
+    }
 
     // =======================================================
     // ============== MÉTODOS COMPLEMENTARES ==============

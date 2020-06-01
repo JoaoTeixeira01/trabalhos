@@ -2,6 +2,7 @@ import com.alexandresilvajoaoteixeira.projeto.*;
 
 import java.util.Date;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -12,8 +13,7 @@ public class Main {
 		competicao.setDataFim(new Date());
 		competicao.setDataInicio(new Date());
 		System.out.println(competicao);
-		
-		
+		//--------------------------------------
 		//Arbitros
 		Arbitros arbitro = new Arbitros();
 		arbitro.setCartaoCidadao(232912985);
@@ -21,18 +21,67 @@ public class Main {
 		arbitro.setDataNascimento(new Date());
 		arbitro.setEmail("aaaa@gmail.com");
 		arbitro.setNome("José");
+		//--------------------------------------		
+		//Jogadores
+		Jogadores jogador1 = new Jogadores();
+		jogador1.setCartaoCidadao(253214232);
+		jogador1.setContacto(935654554);
+		jogador1.setNome("Alex");
+		jogador1.setEmail("bbbb@gmail.com");
+		jogador1.setPosicao("Médio Ofensivo");
+		jogador1.setPePreferido(true);
+		jogador1.addJogadores(jogador1);
+		System.out.println(jogador1);
 		
+		Jogadores jogador2 = new Jogadores();
+		jogador2.setCartaoCidadao(253214237);
+		jogador2.setContacto(935654552);
+		jogador2.setNome("João");
+		jogador2.setEmail("cccc@gmail.com");
+		jogador2.setPosicao("Médio");
+		jogador2.setPePreferido(false);
+		jogador2.addJogadores(jogador2);
+		System.out.println(jogador2);
+		
+		//--------------------------------------
+		//treinadores
+		Treinadores treinador1 = new Treinadores();
+		treinador1.setCartaoCidadao(252326211);
+		treinador1.setNome("Asdrubal");
+		treinador1.setContacto(960000000);
+		treinador1.setEmail("Asdrubal@gmail.com");
+		treinador1.addTreinadores(treinador1);
+		System.out.println(treinador1);
+
+		Treinadores treinador2 = new Treinadores();
+		treinador2.setCartaoCidadao(252326211);
+		treinador2.setNome("Jonh");
+		treinador2.setContacto(961000000);
+		treinador2.setEmail("Jonh@gmail.com");
+		treinador2.addTreinadores(treinador2);
+		System.out.println(treinador2);
+
+		Treinadores treinador3 = new Treinadores();
+		treinador3.setCartaoCidadao(252326211);
+		treinador3.setNome("Tomas");
+		treinador3.setContacto(963000000);
+		treinador3.setEmail("Tomas@gmail.com");
+		treinador3.addTreinadores(treinador3);
+		System.out.println(treinador3);
+
+		
+		//--------------------------------------
 		//Clubes 
-		Clubes clube = new Clubes();
-		clube.setcodigoIdentificador(11233212);
-		clube.setNome("FC Vermelho");
-		clube.setContacto(912563348);
-		clube.setCorEquipamento("vermelho");
-		clube.setDataFundacao(new Date());
-		clube.setEmail("Vermelho@gmail.com");
-		clube.setMorada("Rua dos Vermelhos");
-		System.out.println(clube);
-		
+		Clubes clube1 = new Clubes();
+		clube1.setcodigoIdentificador(11233212);
+		clube1.setNome("FC Vermelho");
+		clube1.setContacto(912563348);
+		clube1.setCorEquipamento("vermelho");
+		clube1.setDataFundacao(new Date());
+		clube1.setEmail("Vermelho@gmail.com");
+		clube1.setMorada("Rua dos Vermelhos");
+		System.out.println(clube1);
+		//--------------------------------------
 		//Equipas
 		Equipas equipa1 = new Equipas();
 		equipa1.setcodigoIdentificador(555777111);
@@ -51,7 +100,7 @@ public class Main {
 		equipa3.setNome("FC Verdes");
 		equipa3.setEscalao("Benjamin");
 		System.out.println(equipa3);
-		
+		//--------------------------------------
 		//Jogos
 		Jogos jogo = new Jogos();
 		jogo.setEquipaVisitada("FC Vermelhos");
@@ -61,13 +110,41 @@ public class Main {
 		jogo.setJornada(1);
 		jogo.addArbitro(arbitro);
 		
-		
 		System.out.println(jogo);
 		
 		//add's e remove's
+		//Adiciona as equipas à competição
 		competicao.addEquipa(equipa1);
 		competicao.addEquipa(equipa2);
-		competicao.removeEquipa(equipa3);		
+		//Remove a equipa da competição
+		competicao.removeEquipa(3);
+		//Adiciona um Jogo
 		competicao.addJogo(jogo);
+		//Lista de todas as equipas na competição
+		competicao.numeroEquipas(equipa1);
+		//Adiciona um arbitro
+		jogo.addArbitro(arbitro);
+		//Adiciona os Jogadores à equipa
+		equipa1.addJogadores(jogador1);
+		equipa2.addJogadores(jogador2);
+		//Remove um Jogador
+		equipa1.removeJogadores(253214232);
+		//Adiciona os treinadores às equipas
+		equipa1.addTreinadores(treinador1);
+		equipa2.addTreinadores(treinador2);
+		equipa3.addTreinadores(treinador3);
+		//Remove um treinador
+		equipa3.removeTreinadores(252326211);
+		//Lista dos jogadores de um clube
+		clube1.numeroJogadores(jogador1);
+		//Lista dos Treinadores de um clube
+		clube1.numeroTreinadores(treinador1);
+		//Mostra as informações do Jogador
+		jogador1.Jogadorinfo();
+		//Mostra as informações do Treinador
+		treinador1.Treinadorinfo();
+		//Mostra as informações do Arbitro
+		arbitro.Arbitroinfo();
+		
 	}
 }
