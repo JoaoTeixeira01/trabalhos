@@ -76,7 +76,7 @@ public class Main {
 		clube1.setNome("FC Vermelho");
 		clube1.setContacto(912563348);
 		clube1.setCorEquipamento("vermelho");
-		clube1.setDataFundacao(LocalDate.of(2020, 1, 20));
+		clube1.setDataFundacao(LocalDate.of(1904, 2, 28));
 		clube1.setEmail("Vermelho@gmail.com");
 		clube1.setMorada("Rua dos Vermelhos");
 		System.out.println(clube1);
