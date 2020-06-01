@@ -1,7 +1,7 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
-import java.util.Date;
 import java.util.List;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
@@ -34,7 +34,7 @@ public class Clubes extends Competicoes{
 
 	private int codigoIdentificador;
 	private String nome;
-	private Date dataFundacao;
+	private LocalDate dataFundacao;
 	private String corEquipamento;
 	private int contacto;
 	private String email;
@@ -61,11 +61,11 @@ public class Clubes extends Competicoes{
 		this.nome = nome;
 	}
 	
-	public Date getDataFundacao() {
+	public LocalDate getDataFundacao() {
 		return dataFundacao;
 	}
 	
-	public void setDataFundacao(Date dataFundacao) {
+	public void setDataFundacao(LocalDate dataFundacao) {
 		this.dataFundacao = dataFundacao;
 	}
 	
@@ -121,7 +121,7 @@ public class Clubes extends Competicoes{
 
     // CONSTRUTOR COM PARÂMETROS
 
-	public Clubes(int codigoIdentificador, String nome, Date dataFundacao, String corEquipamento, int contacto, String email,
+	public Clubes(int codigoIdentificador, String nome, LocalDate dataFundacao, String corEquipamento, int contacto, String email,
 			String morada) {
 		super();
 		this.codigoIdentificador = codigoIdentificador;

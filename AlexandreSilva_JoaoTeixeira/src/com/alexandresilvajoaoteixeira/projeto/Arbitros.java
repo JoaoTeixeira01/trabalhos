@@ -1,6 +1,6 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  * A class <strong>Arbitros</strong> disponibliza um conjunto de atributos
@@ -29,7 +29,7 @@ public class Arbitros extends Jogos{
 
 	private int cartaoCidadao;
 	private String nome;
-	private Date dataNascimento;
+	private LocalDate dataNascimento;
 	private int contacto;
 	private String email;
 
@@ -53,11 +53,11 @@ public class Arbitros extends Jogos{
 		this.nome = nome;
 	}
 	
-	public Date getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 	
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	
@@ -89,7 +89,7 @@ public class Arbitros extends Jogos{
 
     // CONSTRUTOR COM PARÂMETROS
 
-	public Arbitros(int cartaoCidadao, String nome, Date dataNascimento, int contacto, String email) {
+	public Arbitros(int cartaoCidadao, String nome, LocalDate dataNascimento, int contacto, String email) {
 		super();
 		this.cartaoCidadao = cartaoCidadao;
 		this.nome = nome;

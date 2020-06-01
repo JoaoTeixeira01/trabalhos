@@ -1,8 +1,8 @@
 package com.alexandresilvajoaoteixeira.projeto;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Date;
 
 /**
  * A class <strong>Competicoes</strong> disponibliza um conjunto de atributos
@@ -34,8 +34,8 @@ public class Competicoes {
 
 	private int codigoIdentificador;
 	private String nome;
-	private Date dataInicio;
-	private Date dataFim;
+	private LocalDate dataInicio;
+	private LocalDate dataFim;
 	private List<Equipas> equipasEscalao = new ArrayList<Equipas>();
 	//private List<Clubes> equipasParticipantes;
 	private List<Jogos> jogos = new ArrayList<Jogos>();
@@ -60,19 +60,19 @@ public class Competicoes {
 		this.nome = nome;
 	}
 
-	public Date getDataInicio() {
+	public LocalDate getDataInicio() {
 		return dataInicio;
 	}
 
-	public void setDataInicio(Date dataInicio) {
+	public void setDataInicio(LocalDate dataInicio) {
 		this.dataInicio = dataInicio;
 	}
 
-	public Date getDataFim() {
+	public LocalDate getDataFim() {
 		return dataFim;
 	}
 
-	public void setDataFim(Date dataFim) {
+	public void setDataFim(LocalDate dataFim) {
 		this.dataFim = dataFim;
 	}
 
@@ -112,7 +112,7 @@ public class Competicoes {
 
     // CONSTRUTOR COM PARÂMETROS
 
-	public Competicoes(int codigoIdentificador, String nome, Date dataInicio, Date dataFim) {
+	public Competicoes(int codigoIdentificador, String nome, LocalDate dataInicio, LocalDate dataFim) {
 		super();
 		this.codigoIdentificador = codigoIdentificador;
 		this.nome = nome;

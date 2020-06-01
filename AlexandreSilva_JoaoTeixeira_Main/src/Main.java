@@ -1,5 +1,6 @@
 import com.alexandresilvajoaoteixeira.projeto.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -10,15 +11,15 @@ public class Main {
 		Competicoes competicao = new Competicoes();
 		competicao.setcodigoIdentificador(333666999);
 		competicao.setNome("Futebol Distrital de Santarém");
-		competicao.setDataFim(new Date());
-		competicao.setDataInicio(new Date());
+		competicao.setDataFim(LocalDate.of(2020, 10, 20));
+		competicao.setDataInicio(LocalDate.of(2020, 1, 20));
 		System.out.println(competicao);
 		//--------------------------------------
 		//Arbitros
 		Arbitros arbitro = new Arbitros();
 		arbitro.setCartaoCidadao(232912985);
 		arbitro.setContacto(912323233);
-		arbitro.setDataNascimento(new Date());
+		arbitro.setDataNascimento(LocalDate.of(1990, 5, 10));
 		arbitro.setEmail("aaaa@gmail.com");
 		arbitro.setNome("José");
 		//--------------------------------------		
@@ -77,7 +78,7 @@ public class Main {
 		clube1.setNome("FC Vermelho");
 		clube1.setContacto(912563348);
 		clube1.setCorEquipamento("vermelho");
-		clube1.setDataFundacao(new Date());
+		clube1.setDataFundacao(LocalDate.of(2020, 1, 20);
 		clube1.setEmail("Vermelho@gmail.com");
 		clube1.setMorada("Rua dos Vermelhos");
 		System.out.println(clube1);
